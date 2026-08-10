@@ -906,7 +906,8 @@ class BackendService {
     return response.statusCode == 200 || response.statusCode == 204;
   }
 
-  /// Optional: clear all notifications for the current user (if backend supports it).
+  /// Clear (mark all read) all notifications for the current user.
+  /// Backend: POST /api/notifications/clear (empty body) → 204.
   static Future<bool> clearNotifications() async {
     final headers = await _getAuthHeaders();
     if (!headers.containsKey('Authorization')) return false;

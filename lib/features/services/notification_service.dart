@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:manchi_app/features/services/backend_service.dart';
@@ -93,9 +94,9 @@ class NotificationService {
   bool _storageLoaded = false;
   String? _cachedFcmToken;
 
-  /// Must match backend FCM Android channel id.
+  /// Must match backend FCM Android channel id in AndroidManifest metadata.
   static const AndroidNotificationChannel _channel = AndroidNotificationChannel(
-    'manchi_orders',
+    'order_updates',
     'Order updates',
     description: 'Notifications for order status and new orders',
     importance: Importance.high,
@@ -122,7 +123,7 @@ class NotificationService {
       sound: true,
     );
 
-    const androidInit = AndroidInitializationSettings('@mipmap/ic_launcher');
+    const androidInit = AndroidInitializationSettings('@drawable/ic_manchi_notification');
     const iosInit = DarwinInitializationSettings(
       requestAlertPermission: false,
       requestBadgePermission: false,
@@ -222,6 +223,10 @@ class NotificationService {
             _channel.name,
             channelDescription: _channel.description,
             importance: Importance.high,
+            icon: '@drawable/ic_manchi_notification',
+            color: const Color(0xFFE02B27),
+            largeIcon:
+                const DrawableResourceAndroidBitmap('@mipmap/ic_launcher'),
           ),
           iOS: const DarwinNotificationDetails(
             presentAlert: true,
