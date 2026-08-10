@@ -1,0 +1,55 @@
+[
+  {
+    "state": "Rivers",
+    "alias": "rivers",
+    "lgas": [
+      "Abua/Odual",
+      "Ahoada East",
+      "Ahoada West",
+      "Andoni",
+      "Akuku-Toru",
+      "Asari-Toru",
+      "Bonny",
+      "Degema",
+      "Emuoha",
+      "Eleme",
+      "Ikwerre",
+      "Etche",
+      "Gokana",
+      "Khana",
+      "Obio/Akpor",
+      "Ogba/Egbema/Ndoni",
+      "Ogu/Bolo",
+      "Okrika",
+      "Omuma",
+      "Opobo/Nkoro",
+      "Oyigbo",
+      "Port Harcourt",
+      "Tai"
+    ]
+  },
+
+  {
+    "state": "Enugu",
+    "alias": "enugu",
+    "lgas": [
+      "Awgu",
+      "Aninri",
+      "Enugu East",
+      "Enugu North",
+      "Ezeagu",
+      "Enugu South",
+      "Igbo Etiti",
+      "Igbo Eze North",
+      "Igbo Eze South",
+      "Isi Uzo",
+      "Nkanu East",
+      "Nkanu West",
+      "Nsukka",
+      "Udenu",
+      "Oji River",
+      "Uzo Uwani",
+      "Udi"
+    ]
+  }
+]

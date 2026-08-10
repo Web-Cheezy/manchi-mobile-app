@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1047522003610",
+    "project_id": "manchi-app",
+    "storage_bucket": "manchi-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047522003610:android:4ded406112c3bee06cad23",
+        "android_client_info": {
+          "package_name": "com.webcheezy.manchi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5zbvfbM1tBnrz2KFMPFIUaTOCiufwrgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
