@@ -67,12 +67,12 @@ dev_dependencies:
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/manchi Logo Apple Solid WBG.jpg"
-  image_path_ios: "assets/manchi Logo Apple Solid WBG.jpg"
+  image_path: "assets/lightmanchi.png"
+  image_path_ios: "assets/lightmanchi.png"
   remove_alpha_ios: true
   min_sdk_android: 21 # android min sdk min:16, default 21
   adaptive_icon_background: "#FFFFFF"
-  adaptive_icon_foreground: "assets/manchi Logo Apple Solid WBG.jpg"
+  adaptive_icon_foreground: "assets/lightmanchi.png"
 
 # The following section is specific to Flutter packages.
 flutter:
